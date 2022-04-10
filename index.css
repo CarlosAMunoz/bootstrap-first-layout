@@ -45,3 +45,9 @@
 .carousel-inner .overlay .row {
     height: 100%;
 }
+
+
+#speakers  img{
+    height: 300px;
+    object-fit: cover;
+}
