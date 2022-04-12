@@ -2,7 +2,6 @@
     width: 80px;
 }
 
-
 #footer{
     background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
 }
@@ -50,4 +49,15 @@
 #speakers  img{
     height: 300px;
     object-fit: cover;
+}
+
+.badges{
+    text-align: right;
+}
+
+#place-time img{
+    max-width: 100%;
+}
+#place-time{
+    background-color: #f8f9fa;
 }

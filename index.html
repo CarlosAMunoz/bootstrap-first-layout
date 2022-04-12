@@ -37,7 +37,7 @@
             <a class="nav-link" href="#">Sobre nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  texto-relevante" href="#">Comprar tickets</a>
+            <a class="nav-link  texto-relevante" href="#" > Comprar tickets  </a>
           </li>
 
         </ul>
@@ -86,22 +86,27 @@
 <!-- Se agrega sección de Speakers -->
 <section id="speakers" class="mt-4">
   <div class="container">
-
-    <!-- Columna 1 -->
     <div class="row">
+
+        
       <div class="col text-center text-uppercase " >
         <small> Do you want to know  </small>
         <h2> The speakers </h2>
       </div>
     </div>
 
+      <!-- Fila 2 -->
       <div class="row"> 
-      
+        <!-- Columna 1 -->
         <div class="col-12  col-sm-12  col-md-4" >
           <div class="card mb-4" >
             <img src="./assets/images/1648503400804.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Carlos Muñoz </h5>
+              <div class="badges mb-1">
+                <span class="badge badge-warning"> JavaScript </span>
+                <span class="badge badge-info"> React </span>
+              </div>
+              <h5 class="card-title mb-1">Carlos Muñoz </h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
@@ -111,7 +116,11 @@
           <div class="card mb-4" >
             <img src="./assets/images/sandra.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title"> Sandra M. Londono </h5>
+              <div class="badges mb-1">
+                <span class="badge badge-success"> Node JS </span>
+                <span class="badge badge-danger"> Angular </span>
+              </div>
+              <h5 class="card-title mb-1"> Sandra M. Londono </h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
@@ -121,19 +130,97 @@
           <div class="card mb-4" >
             <img src="./assets/images/random-men.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title"> Rodolfo Sanchez Gallardo </h5>
+              <div class="badges mb-1">
+                <span class="badge badge-primary"> CSS 3 </span>
+              </div>
+              <h5 class="card-title mb-1"> Rodolfo Sanchez Gallardo </h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
         </div>
-
-
-
-
-
       </div>
   </div>
 </section>
+<!-- Cierra sección de Speakers-->
+
+<!--  Seccción nuevo speaker -->
+<section id="orador" class="pt-2 pb-4">
+
+    <div class="container">
+      <div class="row">
+        <div class="col text-uppercase text-center">
+          <small > Conviértete en un </small>
+          <h2> ORADOR </h2>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="col text-center">
+          Anótate como orador para dar una <abbr data-bs-toggle="tooltip" title="Charlas de 5 minutos"> charla ingnite </abbr>
+          Cuéntamos de qué quieres hablar. 
+        </div>
+      </div>
+
+      <!-- Fila Form -->
+      <div class="row mt-4"> 
+        <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+
+          <!-- Formulario -->
+          <form >
+            <div class="form-row ">
+              <div class="form-group col-12 col-md-6 ">
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+            <div class="form row">
+              <div class="form-group col">
+                <textarea name="text" class="form-control form-control-lg" placeholder="Sobre qué quieres hablar"></textarea>  
+                <small class="form-text text-muted"> Recuerda incluír un título para tu charla </small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col"> 
+                <button class="btn btn-success btn-block"> Enviar </button>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+
+    </div>
+</section>
+
+
+
+<!--  Cierra Seccción nuevo speaker -->
+
+<!-- Lugar y Fecha-->
+
+<section id="place-time">
+  <div class="containter-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-6 pl-0 pr-0">
+          <img src="./assets/images/beach.jpg" alt="">
+        </div>
+        <div class="col-12 col-lg-6 pt-2 pl-5">
+          <h2> Honolulu - Febrero 2023 </h2>
+          <p> Lorem ipsum dolor sit ameorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus, at nam, minima dolorum esse sed reiciendis nesciunt iure culpa voluptatibt consectetur adipisicing elit. Ea delectus,Ea delectus, at nam, minima dolorum esse sed reiciendis nesciunt iure culpa voluptatibt consectetur adipisicing elit. Ea delectus, at nam, minima dolorum esse sed reiciendis nesciunt iure culpa voluptatibus ab consequuntur dicta rerum numquam earum, vero similique labore. </p>
+          <a href="#" class="btn btn-outline-dark mb-4"> Conoce más </a>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- Cierra Lugar y Fecha-->
+
 
 
   <!-- Footer  -->
@@ -165,7 +252,11 @@
 
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="./index.js"> </script>
+
   </body>
 </html>
