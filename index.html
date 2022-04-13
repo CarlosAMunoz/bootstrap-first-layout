@@ -11,7 +11,7 @@
     <title> Security </title>
   </head>
 
-  <body data-spy="scroll" data-target="#navbar" data-offset="60">
+  <body data-spy="scroll" data-target="#navbar-controls">
   <!-- header  -->
 
     <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
@@ -21,22 +21,26 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#main">Welcome <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#speakers"> Speakers </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#orador"> Conviértete en orador</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  texto-relevante" href="#place-time" > Fechas  </a>
-          </li>
-
-        </ul>
+      <div class="collapse navbar-collapse" id="navbar" >
+        <div class="navbar-nav ml-auto" id="navbar-controls">  
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#main">Welcome <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#speakers"> Speakers </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#orador"> Conviértete en orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#place-time" > Fechas  </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  texto-relevante" href="#" data-target="#compra" data-toggle="modal"> Comprar tickets  </a>
+                  </li>
+                </ul>
+        </div>
       </div>
     </header>
     </nav>
@@ -68,7 +72,7 @@
                 <!-- Cambiando el display del elemento logramos que desaparezca cuando este sea pequeño. -->
                 <p class="d-none d-sm-block"> Just a description text <br> Welcome everybody. You can feel free to do everything do you want. </p>
                 <a href="#" class="btn btn-outline-light"> Términos y condiciones  </a>
-                 <button type="button" class="btn btn-info"> Unirme </button>
+                 <button type="button" class="btn btn-info" data-target="#compra" data-toggle="modal"> Unirme </button>
                </div>
                  
             </div>
@@ -246,6 +250,41 @@
 
     </footer>
 
+
+
+<!-- Modal -->
+<div class="modal fade" id="compra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Comprar tickets </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form action="">
+            <div class="form-row">
+              <div class="form-group col"> 
+                <div class="input-group flex-nowrap">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+              </div>
+            </div>
+            
+          </form>
+          <div class="alert alert-warning"> Serás notificado una vez recibamos tu solicitud.</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-info">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
