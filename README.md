@@ -1,7 +1,7 @@
 # bootstrap-first-layout
 
 ## ¿Qué es? 
-Este es un pequeño proeycto de layout utilizando las principales funcionalidades que nos ofrece bootstrap v4
+Este es un pequeño proyecto de layout utilizando las principales funcionalidades que nos ofrece bootstrap v4.
 Fue realiza siguiendo el **Curso de Bootstrap 4 de Platzi** por Sacha Lifszyc. 
 
 ## Sitio 
